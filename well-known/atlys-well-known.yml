@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+hosts:
+- host: https://www.atlys.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://api.atlys.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+notes: >-
+  No /.well-known discovery documents are published on either the marketing host
+  (www.atlys.com) or the internal API host (api.atlys.com, which returns
+  {"success":true} at root but publishes no public documentation). Absence is a
+  valid, recorded result. Re-probe on future runs.

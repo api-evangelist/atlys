@@ -1,7 +1,20 @@
 aid: atlys
 name: Atlys
-description: Atlys is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Atlys is a digital visa application platform that helps travelers obtain
+  tourist, business, and transit visas on time for 150+ destinations, backed by
+  a guarantee. Founded in 2020 by Mohak Nahta and headquartered in San
+  Francisco, Atlys asks travelers a short set of questions and then automates
+  form-filling, document compilation (itineraries, cover letters, NOCs, flight
+  and hotel confirmations), payment, and appointment booking against official
+  government and embassy requirements that are refreshed monthly. It covers
+  e-visas, visa-on-arrival, Schengen, US, UK ETA and more, and serves travelers
+  from India, the United States, the United Kingdom, the UAE, Australia,
+  Singapore, and Saudi Arabia. Atlys Enterprise adds group processing (up to
+  1,000 travelers), HRMS/payroll integrations (Workday, Rippling), concierge
+  support, and secure passport logistics for corporate travel teams. Atlys is
+  backed by Andreessen Horowitz (a16z), Sequoia, Accel, and others, having
+  raised over $40M across multiple rounds.
 url: https://raw.githubusercontent.com/api-evangelist/atlys/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +22,65 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.atlys.com/static/og-01062026.png
 tags:
 - Company
+- Travel
+- Visas
+- Immigration
+- Travel Technology
+- Consumer
+- Mobile
+- Enterprise
 apis: []
+common:
+- type: DomainSecurity
+  url: security/atlys-domain-security.yml
+- type: Website
+  url: https://www.atlys.com/en-US
+- type: Enterprise
+  url: https://enterprise.atlys.com/
+- type: Blog
+  url: https://www.atlys.com/blog
+- type: SignUp
+  url: https://www.atlys.com/en-US/apply
+- type: StatusPage
+  url: https://www.atlys.com/transparency/status
+- type: TermsOfService
+  url: https://www.atlys.com/terms
+- type: PrivacyPolicy
+  url: https://www.atlys.com/privacy
+- type: Careers
+  url: https://careers.atlys.com/
+- type: iOS
+  url: https://apps.apple.com/us/app/atlys-visas-on-time/id1514036839
+- type: Android
+  url: https://play.google.com/store/apps/details?id=com.atlys.android
+- type: LLMsTxt
+  url: llms/atlys-llms.txt
+- type: Lifecycle
+  url: lifecycle/atlys-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

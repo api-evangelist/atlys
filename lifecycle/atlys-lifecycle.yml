@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.atlys.com/transparency/status
+status_page: https://www.atlys.com/transparency/status
+notes: >-
+  Atlys publishes a public transparency + system-status page tracking uptime of
+  the Atlys platform and the individual government/embassy visa portals it
+  integrates with, with historical incident logging and update subscriptions.
+  Atlys also publishes a public price-change log at
+  https://www.atlys.com/transparency/price-change-log. No public developer API,
+  versioning policy, deprecation policy, or SLA document was found (Atlys is a
+  consumer/enterprise visa product, not a public API provider).
+transparency:
+  status_page: https://www.atlys.com/transparency/status
+  price_change_log: https://www.atlys.com/transparency/price-change-log
+  refunds_policy: https://www.atlys.com/transparency/refunds-policy
+  transparency_report: https://www.atlys.com/transparency-2025
+versioning: null
+deprecation: null
+sla: null
