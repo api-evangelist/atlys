@@ -16,6 +16,10 @@ deployment:
 tools_count: 1
 tools:
 - name: check_visa_requirements
-  description: ''
+  description: 'Check if a visa is required for travel between countries. Use this tool when users ask
+    about visa requirements, travel documentation, or whether they need a visa to visit a country.  IMPORTANT:
+    You must use valid 3-letter country codes for'
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
