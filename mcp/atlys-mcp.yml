@@ -17,8 +17,21 @@ tools_count: 1
 tools:
 - name: check_visa_requirements
   description: 'Check if a visa is required for travel between countries. Use this tool when users ask
-    about visa requirements, travel documentation, or whether they need a visa to visit a country.  IMPORTANT:
-    You must use valid 3-letter country codes for'
+    about visa requirements, travel documentation, or whether they need a visa to visit a country.
+
+
+    IMPORTANT: You must use valid 3-letter country codes for ''from'' and ''to'' parameters, and valid
+    nationality codes for ''nationality'' parameter.
+
+
+    Common country codes: USA (United States), GBR (United Kingdom), IND (India), CHN (China), JPN (Japan),
+    AUS (Australia), CAN (Canada), DEU (Germany), FRA (France), THA (Thailand), ARE (United Arab Emirates),
+    SGP (Singapore), etc.
+
+
+    Common nationality codes: American (USA), British (GBR), Indian (IND), Chinese (CHN), Japanese (JPN),
+    Australian (AUS), Canadian (CAN), German (DEU), French (FRA), Thai (THA), Emirati (ARE), Singaporean
+    (SGP), etc.'
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
 descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
