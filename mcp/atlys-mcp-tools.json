@@ -1,0 +1,85 @@
+{
+  "endpoint": "https://mcp.atlys.com/mcp",
+  "captured": "2026-10-20",
+  "method": "initialize + tools/list (anonymous, no tool called; roadmap#992)",
+  "protocol_version": "2025-06-18",
+  "server_info": {
+    "name": "atlys",
+    "version": "1.12.4"
+  },
+  "result": {
+    "tools": [
+      {
+        "name": "check_visa_requirements",
+        "title": "Check Visa Requirements",
+        "description": "Check if a visa is required for travel between countries. Use this tool when users ask about visa requirements, travel documentation, or whether they need a visa to visit a country.\n\nIMPORTANT: You must use valid 3-letter country codes for 'from' and 'to' parameters, and valid nationality codes for 'nationality' parameter.\n\nCommon country codes: USA (United States), GBR (United Kingdom), IND (India), CHN (China), JPN (Japan), AUS (Australia), CAN (Canada), DEU (Germany), FRA (France), THA (Thailand), ARE (United Arab Emirates), SGP (Singapore), etc.\n\nCommon nationality codes: American (USA), British (GBR), Indian (IND), Chinese (CHN), Japanese (JPN), Australian (AUS), Canadian (CAN), German (DEU), French (FRA), Thai (THA), Emirati (ARE), Singaporean (SGP), etc.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "nationality": {
+              "type": "string",
+              "minLength": 2,
+              "description": "The nationality code of the traveler (e.g., 'IND' for Indian)"
+            },
+            "from": {
+              "type": "string",
+              "minLength": 2,
+              "description": "The country code where the traveler is departing from (e.g., 'IND' for India)"
+            },
+            "to": {
+              "type": "string",
+              "minLength": 2,
+              "description": "The destination country code (e.g., 'USA' for United States)"
+            },
+            "travel_type": {
+              "type": "string",
+              "enum": [
+                "tourism",
+                "business",
+                "transit"
+              ],
+              "default": "tourism",
+              "description": "Purpose of travel"
+            },
+            "trip_type": {
+              "type": "string",
+              "enum": [
+                "roundTrip",
+                "oneWay"
+              ],
+              "default": "roundTrip",
+              "description": "Type of trip"
+            },
+            "departure_date": {
+              "type": "string",
+              "description": "Departure date in ISO format (e.g., '2025-02-10T10:00:00Z')"
+            },
+            "return_date": {
+              "type": "string",
+              "description": "Return date in ISO format (required for round trips)"
+            }
+          },
+          "required": [
+            "nationality",
+            "from",
+            "to",
+            "departure_date"
+          ],
+          "additionalProperties": false
+        },
+        "annotations": {
+          "title": "Check Visa Requirements",
+          "readOnlyHint": true,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "_meta": {
+          "openai/outputTemplate": "ui://widget/visa.html",
+          "openai/toolInvocation/invoking": "Atlys is working",
+          "openai/toolInvocation/invoked": "Visa requirements checked"
+        }
+      }
+    ]
+  }
+}
