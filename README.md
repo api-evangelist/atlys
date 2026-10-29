@@ -64,6 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Atlys is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Atlys is a digital visa application platform that helps travelers obtain tourist, business, and transit visas on time for 150+ destinations, backed by a guarantee. Founded in 2020 by Mohak Nahta and headquartered in San Francisco, Atlys asks travelers a short set of questions and then automates form-filling, document compilation (itineraries, cover letters, NOCs, flight and hotel confirmations), payment, and appointment booking against official government and embassy requirements that are refreshed monthly. It covers e-visas, visa-on-arrival, Schengen, US, UK ETA and more, and serves travelers from India, the United States, the United Kingdom, the UAE, Australia, Singapore, and Saudi Arabia. Atlys Enterprise adds group processing (up to 1,000 travelers), HRMS/payroll integrations (Workday, Rippling), concierge support, and secure passport logistics for corporate travel teams. Atlys is backed by Andreessen Horowitz (a16z), Sequoia, Accel, and others, having raised over $40M across multiple rounds.
 
-Backed by: a16z
+**Areas:** Company · Travel · Visa · Immigration · Travel Technology · Consumer · Mobile · Enterprise
+
+## Atlys on APIs.io
+
+Everything profiled for Atlys is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/atlys/](https://apis.io/providers/atlys/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [atlys](https://apis.io/servers/atlys/atlys/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Atlys Domain Security](https://apis.io/security/atlys/atlys-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.atlys.com/en-US)
+- [Sign up](https://www.atlys.com/en-US/apply)
+- [Blog](https://www.atlys.com/blog)
+- [Terms of service](https://www.atlys.com/terms)
+- [Privacy policy](https://www.atlys.com/privacy)
+- [Status](https://www.atlys.com/transparency/status)
+
+## API Evangelist rating
+
+**Kin Score 15.0** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 34.2 |
+
+**Agent readiness 8.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/atlys/](https://apis.io/providers/atlys/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Atlys: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/atlys/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
